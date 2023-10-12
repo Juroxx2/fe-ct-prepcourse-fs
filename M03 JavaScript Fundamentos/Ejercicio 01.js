@@ -11,15 +11,14 @@ const nuevoString = "null";
 const nuevoNumero = 15;
 
 // Crea una variable de tipo boolean.
-// const nuevoBoolean = 
-var estoyFeliz = true;
-var estoyTriste = false;
+const nuevoBoolean = true
+ 
 
 
 // Resuelve el siguiente problema matemático.
 const nuevaResta = 10 - 7 === 3;
 
-console.log(10 + 7)
+console.log(10 + 7);
 
 // Resuelve el siguiente problema matemático.
 const nuevaMultiplicacion = 10 * 4 === 40;
@@ -27,9 +26,11 @@ const nuevaMultiplicacion = 10 * 4 === 40;
 console.log(10 * 4);
 
 // Resuelve el siguiente problema matemático.
-const nuevoModulo = 21 % 5 === 4.2;
+const nuevoModulo = 21 % 5 === 1;
 
-console.log(21 /5)
+console.log(nuevoModulo);
+
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {

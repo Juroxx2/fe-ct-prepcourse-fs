@@ -8,13 +8,17 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
-   if (num > 0){
+   if (num > 0) {
       return 'Es positivo';
-   } else if( num < 0){
+   } else if (num < 0) {
       return 'Es negativo';
-   } else 
-      return 'false'
+   } else {
+      return false;
    }
+}
+console.log(esPositivo(50));
+console.log(esPositivo(-51));
+console.log(esPositivo(0));
    
 
 
@@ -22,79 +26,79 @@ function agregarSimboloExclamacion(str) {
    // Agrega un símbolo de exclamación al final del string "str" y retórnalo
    // Ejemplo: "hello world" ---> "hello world!"
    // Tu código:
-   var agregarSimboloExclamacion ='Hola mundo'
-   var agregarSimboloExclamacion = agregarSimboloExclamacion.split('');
-      agregarSimboloExclamacion.push('!');
-   
-      // console.log(agregarSimboloExclamacion);
-   
-   
-   var agregarSimboloExclamacionahora = agregarSimboloExclamacion.join('');
-
-   console.log(agregarSimboloExclamacionahora);
+      return str + '!'
 }
+console.log(agregarSimboloExclamacion('Hola Nakamas'));
+
+
 function combinarNombres(nombre, apellido) {
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
 
-   var nombre = "Soy";
-   var apellido = "Henry";
-   var nombreCompleto = combinarNombres(nombre, apellido);
-   console.log(nombreCompleto); 
+   return nombre + ' ' + apellido;
 }
+console.log(combinarNombres("MonkeyD","Luffy")); 
+
 
 function obtenerSaludo(nombre) {
    // Toma el string "nombre" y concatena otra string en la cadena para que tome la siguiente forma:
    // Ejemplo: "Martin" ---> "Hola Martin!"
    // Tu código:
-
-var nombre = "Martin";
-var saludo = obtenerSaludo(nombre);
-console.log(saludo);
+   return 'Hola ' + nombre + '!';
 }
+console.log(obtenerSaludo("luffy"));
 
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
+   return alto * ancho;
+}
   
    var alto = 5;
    var ancho = 10;
    var area = obtenerAreaRectangulo(alto, ancho);
    console.log(area); 
    
-}
+
 
 function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un cuadrado.
    // Debes retornar su perímetro.
    // Tu código:
-   
+   return lado *4
+}
    var longitudLado = 5;
    var perimetro = retornarPerimetro(longitudLado);
    console.log(perimetro);
    
-}
+
 
 function areaDelTriangulo(base, altura) {
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
+   return base * altura / 2;
+}
 
-   var base = 6;
+   var base = 16;
    var altura = 4;
    var area = areaDelTriangulo(base, altura);
    console.log(area); 
    
-}
+
 
 function deEuroAdolar(euro) {
    // Supongamos que 1 euro equivale a 1.20 dólares.
    // Debes calcular el valor recibido como argumento pasándolo a dolares.
    // Tu código:
-   var cantidadEuros = 50;
+      return euro *1.20;
+}
+
+
+   var cantidadEuros = 300;
    var cantidadDolares = deEuroAdolar(cantidadEuros);
    console.log(cantidadDolares); 
-}
+
 
 function esVocal(letra) {
    // Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”.
@@ -103,22 +107,18 @@ function esVocal(letra) {
    // Tu código:
   
       
-      if (typeof letra === "string" && letra.length === 1) {
-         
-         var letraMinuscula = letra.toLowerCase();
-   
-         
-         if (letraMinuscula === 'a' || letraMinuscula === 'e' || letraMinuscula === 'i' || letraMinuscula === 'o' || letraMinuscula === 'u') {
-            return "Es vocal";
-         } else {
-            return "Dato incorrecto";
-         }
-      } else {
-         return "Dato incorrecto";
+   if (letra.length === 1) {
+      letra = letra.toLowerCase();
+      if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+         return 'Es vocal';
       }
    }
+   return 'Dato incorrecto';
+}
    
    console.log(esVocal("a")); 
+   console.log(esVocal("E")); 
+   console.log(esVocal("B")); 
    
 
 
