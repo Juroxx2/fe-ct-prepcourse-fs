@@ -7,12 +7,11 @@
 // Crea una variable de tipo string.
 const nuevoString = "null";
 //var "hola"
-
 // Crea una variable de tipo number.
 const nuevoNumero = 15;
 
 // Crea una variable de tipo boolean.
-const nuevoBoolean = 
+// const nuevoBoolean = 
 var estoyFeliz = true;
 var estoyTriste = false;
 
